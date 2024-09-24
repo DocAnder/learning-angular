@@ -1,3 +1,10 @@
-<div style="background-color: bisque;" *ngIf="prop">Sou uma div!</div>
+<div style="background-color: bisque;" *ngIf="prop; else meuTemplate">Sou uma div!</div>
+
+<ng-template #meuTemplate>
+
+    <div style="background-color: cadetblue;">Sou uma outra div!</div>
+
+</ng-template>
+
 
 <button (click)="buttonToggle()">Toggle</button>
