@@ -9,9 +9,9 @@ export class AppComponent {
   name: string = 'Anderson';
 
 
-  handleInputChange(event: any){
-    console.log(event)
-    this.name = event;
-  }
+  // handleInputChange(event: any){
+  //   console.log(event)
+  //   this.name = event;
+  // }
 
 }
