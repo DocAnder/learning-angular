@@ -1,8 +1,23 @@
-<div style="background-color: bisque;" *ngIf="prop; else meuTemplate">Sou uma div!</div>
+<!-- <div style="background-color: bisque;" *ngIf="prop; else meuTemplate">Sou uma div!</div>
 
 <ng-template #meuTemplate>
 
     <div style="background-color: cadetblue;">Sou uma outra div!</div>
+
+</ng-template> -->
+
+
+<ng-container *ngIf="prop; then meuTemplate; else outroTemplate"></ng-container>
+
+<ng-template #meuTemplate>
+
+    <div style="background-color: cadetblue;">Sou a div then!</div>
+
+</ng-template>
+
+<ng-template #outroTemplate>
+
+    <div style="background-color: bisque;">Sou a div do else!</div>
 
 </ng-template>
 
