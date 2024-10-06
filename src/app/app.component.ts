@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ng-for';
+
+  personSelectedIndex: number | undefined;
+
+  listPessoas = [
+    {name:'Milton Nascimento', age: 56},
+    {name:'Santos Dumont', age: 35},
+    {name:'Charles Chapling', age: 45},
+    {name:'Levita Peron', age: 23},
+  ];
+
+
+  selectPerson(index: number){
+    this.personSelectedIndex = index;
+  }
+ 
 }
